@@ -58,7 +58,7 @@ def apply_mergers(df, mergers, drop=False):
     for merger in mergers:
         sentinels = merger['old_ids']
         series = df.ix[sentinels].apply(sum)
-        if series.any():
+        if len(df.ix[sentinels]):
             logger.info('Merging %s to %s', sentinels, merger['id'])
             df = merge_series(df, series, merger['id'])
             logger.info('Results: %s', df)
