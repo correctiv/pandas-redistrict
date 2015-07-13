@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "country": "de",
+    "scope": "Kreis"
+  },
+  "changes": [
+  {
+    "source": "https://de.wikipedia.org/wiki/Kreisreformen_in_der_Bundesrepublik_Deutschland_nach_1990#Nordrhein-Westfalen",
+    "date": "2009-10-21",
+    "mergers": [
+      {"id": "05334", "name": "Städteregion Aachen", "old_ids": ["05354", "05313"]}
+    ]
+  },
+  {
+    "source": "https://de.wikipedia.org/wiki/Kreisgebietsreform_Mecklenburg-Vorpommern_2011",
+    "date": "2011-09-04",
+    "mergers": [
+      {"id": "13071", "name": "Mecklenburgische Seenplatte", "old_ids": ["13002", "13056", "13055", "13052"]},
+      {"id": "13072", "name": "Landkreis Rostock", "old_ids": ["13051", "13053"]},
+      {"id": "13076", "name": "Ludwigslust-Parchim", "old_ids": ["13060", "13054"]},
+      {"id": "13074", "name": "Nordwestmecklenburg", "old_ids": ["13006", "13058"]},
+      {"id": "13073", "name": "Vorpommern-Rügen", "old_ids": ["13005", "13057", "13061"]},
+      {"id": "13075", "name": "Vorpommern-Greifswald", "old_ids": ["13001", "13059", "13062"]}
+    ]
+  },
+  {
+    "source": "https://de.wikipedia.org/wiki/Kreisreform_Sachsen_2008",
+    "date": "2008-08-01",
+    "mergers": [
+      {"id": "14625", "name": "Bautzen", "old_ids": ["14272", "14292", "14264"]},
+      {"id": "14521", "name": "Erzgebirgskreis", "old_ids": ["14171", "14191", "14181", "14188"]},
+      {"id": "14626", "name": "Görlitz", "old_ids": ["14286", "14284", "14263"]},
+      {"id": "14729", "name": "Leipzig", "old_ids": ["14379", "14383"]},
+      {"id": "14713", "name": "Leizpig (kreisefreie Stadt)", "old_ids": ["14365"]},
+      {"id": "14627", "name": "Meißen", "old_ids": ["14280", "14285"]},
+      {"id": "14522", "name": "Mittelsachsen", "old_ids": ["14375", "14177", "14182"]},
+      {"id": "14730", "name": "Nordsachsen", "old_ids": ["14374", "14389"]},
+      {"id": "14628", "name": "Sächsische Schweiz-Osterzgebirge", "old_ids": ["14287", "14290"]},
+      {"id": "14523", "name": "Vogtlandkreis", "old_ids": ["14178", "14166"]},
+      {"id": "14524", "name": "Zwickau", "old_ids": ["14173", "14193", "14167"]},
+      {"id": "14612", "name": "Dresden (kreisefreie Stadt)", "old_ids": ["14262"]},
+      {"id": "14511", "name": "Chemnitz (kreisfreie Stadt)", "old_ids": ["14161"]}
+    ]
+  },
+  {
+    "source": "https://de.wikipedia.org/wiki/Kreisreform_Sachsen-Anhalt_2007",
+    "date": "2007-07-01",
+    "mergers": [
+      {"id": "15003", "name": "Magedeburg", "old_ids": ["15303"]},
+      {"id": "15002", "name": "Halle", "old_ids": ["15202"]},
+      {"id": "15001", "name": "Dessau-Roßlau", "old_ids": ["15101"]},
+      {"id": "15081", "name": "Altmarkkreis Salzwedel", "old_ids": ["15370"]},
+      {"id": "15083", "name": "Börde", "old_ids": ["15355", "15362"]},
+      {"id": "15084", "name": "Burgendlandkreis", "old_ids": ["15256", "15268"]},
+      {"id": "15087", "name": "Mansfeld-Südharz", "old_ids": ["15266", "15260"]},
+      {"id": "15088", "name": "Saalekreis", "old_ids": ["15261", "15265"]},
+      {"id": "15090", "name": "Stendal", "old_ids": ["15363"]},
+      {"id": "15086", "name": "Jerichower Land", "old_ids": ["15358"]},
+      {"id": "15091", "name": "Wittenberg", "old_ids": ["15171"]},
+      {"id": "15082", "name": "Anhalt-Bitterfeld", "old_ids": ["15154", "15159"]},
+      {"id": "15085", "name": "Harz", "old_ids": ["15357", "15369", "15364"]},
+      {"id": "15089", "name": "Salzlandkreis", "old_ids": ["15153", "15367"]}
+    ],
+    "splits": [
+      {
+        "old_id": "15151",
+        "to": [{
+            "id": "15082",
+            "ratio": 0.37,
+            "details": [
+                ["Zerbst/Anhalt", 15537],
+                ["Bornum", 546],
+                ["Buhlendorf", 250],
+                ["Deetz", 725],
+                ["Dobritz", 308],
+                ["Gehrden", 216],
+                ["Gödnitz", 242],
+                ["Grimme", 176],
+                ["Güterglück", 735],
+                ["Hohenlepte", 243],
+                ["Jütrichau", 512],
+                ["Leps", 316],
+                ["Lindau, Stadt", 1148],
+                ["Moritz", 343],
+                ["Nedlitz", 670],
+                ["Nutha", 292],
+                ["Polenzko", 301],
+                ["Reuden/Anhalt", 312],
+                ["Steutz", 947],
+                ["Straguth", 269],
+                ["Walternienburg", 561],
+                ["Zernitz", 264]
+            ]
+          },
+          {
+            "id": "15086",
+            "ratio": 0.08,
+            "details": [
+                ["Hobeck", 503],
+                ["Loburg", 2385],
+                ["Lübs", 404],
+                ["Prödel", 291],
+                ["Rosian", 590],
+                ["Schweinitz", 287],
+                ["Zeppernick", 710]
+            ]
+          },
+          {
+            "id": "15091",
+            "ratio": 0.35,
+            "details": [
+                ["Coswig (Anhalt)", 14810],
+                ["Wörlitzer Winkel", 9344]
+              ]
+          },
+          {
+            "id": "15001",
+            "ratio": 0.2,
+            "details": [
+                  ["Roßlau (Elbe)", 13849]
+              ]
+          }
+        ]
+      },
+      {
+        "old_id": "15352",
+        "to": [{
+            "id": "15085",
+            "ratio": 0.07,
+            "details": [
+              ["Falkenstein/Harz", 6187]
+            ]
+          },
+          {
+            "id": "15089",
+            "ratio": 0.93,
+            "details": [
+              ["Aschersleben/Land", 30021],
+              ["Egelner Mulde", 12578],
+              ["Stadt Hecklingen", 9065],
+              ["Seeland", 9964],
+              ["Staßfurt", 25815]
+            ]
+          }
+        ]
+      }
+    ]
+  }]
+}
