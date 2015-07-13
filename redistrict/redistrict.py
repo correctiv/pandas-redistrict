@@ -1,10 +1,12 @@
 from datetime import date, datetime
 import json
 import os
+import logging
 
 import pandas as pd
 
 BASE_DIR = os.path.dirname(__file__)
+logger = logging.getLogger(__file__)
 
 
 def redistrict(df, kind, start=None, end=None, drop=False, splits=True):
@@ -41,7 +43,9 @@ def apply_change(df, change, splits=True, **kwargs):
         df = apply_splits(df, change['splits'], **kwargs)
 
     if df.index.duplicated().any():
+        logger.info('Summing up duplicate index.')
         df = df.groupby(df.index).sum()
+        logger.info('Result: %s' % df)
     return df
 
 
@@ -55,8 +59,11 @@ def apply_mergers(df, mergers, drop=False):
         sentinels = merger['old_ids']
         series = df.ix[sentinels].apply(sum)
         if series.any():
+            logger.info('Merging %s to %s', sentinels, merger['id'])
             df = merge_series(df, series, merger['id'])
+            logger.info('Results: %s', df)
             if drop:
+                logger.info('Dropping %s', sentinels)
                 df = df.drop(sentinels, errors='ignore')
     return df
 
@@ -71,7 +78,10 @@ def apply_splits(df, splits, drop=False):
         for to in split['to']:
             ratio = to['ratio']
             series = row.copy() * ratio
+            logger.info('Splitting %s to %s at %s', old_id, to['id'], to['ratio'])
             df = merge_series(df, series, to['id'])
+            logger.info('Result: %s', df)
         if drop:
+            logger.info('Dropping %s', old_id)
             df = df.drop(old_id, errors='ignore')
     return df
