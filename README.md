@@ -8,6 +8,12 @@ Supports merging and splitting of districts:
 
 Data on redistricting is in `data/` directory. Currently only available for German *Kreise* (containing reforms in NRW, Sachsen, Sachsen-Anhalt and Mecklenburg-Vorpommern).
 
+Install like this:
+
+    pip install pandas-redistrict
+
+
+## Example
 
 ``` python
 >>> df  # Values of indexed by German district identifiers
