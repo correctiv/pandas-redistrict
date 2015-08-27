@@ -24,10 +24,10 @@ def find_version(*file_paths):
 
 setup(
     name="pandas-redistrict",
-    version='0.0.1',
+    version=find_version('redistrict', '__init__.py'),
     url='https://github.com/correctiv/pandas-redistrict',
     license='MIT',
-    description="Redistricting of district-indexed tables",
+    description="Redistricting of pandas dataframes",
     long_description=read('README.md'),
     author='Stefan Wehrmeyer',
     author_email='stefan.wehrmeyer@correctiv.org',
