@@ -53,7 +53,7 @@ When you want to preserve groups inside districts, you can use ``redistrict_grou
 4  15159  2005      10      11
 5  15151  2005      12      13
 6  15082  2013      13      14
->>> # from redistrict import redistrict_grouped
+>>> from redistrict import redistrict_grouped
     redistrict_grouped(df, 'de/kreise', ['year'],
                                     district_col='AGS',
                                     value_cols=['value1', 'value2'],
